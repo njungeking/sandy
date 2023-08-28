@@ -11,7 +11,7 @@
 int main(void)
 {
 float cels, fahr;
-int upper, step, lower;
+float upper, step, lower;
 
 upper = 100;
 step = 10;
@@ -23,7 +23,7 @@ cels = lower;
 while (cels <= upper)
 {
 	fahr = (cels * 9 / 5) + 32;
-	printf("%4.1f\t%6.2lf\n", cels, fahr);
+	printf("%3.0f\t%6.1f\n", cels, fahr);
 	cels = cels + step;
 }
 return (0);
