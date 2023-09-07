@@ -10,7 +10,7 @@
 #define UPPER 300 /* upper limit of table */
 #define STEP 20 /* step size */
 
-int main (void)
+int main(void)
 {
 	printf("Welcome to the Temperature Conversion Program!\n");
 
