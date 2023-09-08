@@ -1,1 +1,1 @@
-## Character counting
+# Character counting.
