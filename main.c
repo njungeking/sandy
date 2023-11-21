@@ -1,23 +1,27 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/*A review on factorial using functions*/
+/*A recap of the gcd function using recursion*/
 
-int fact(int x);
+int gcd(int x, int y);
 
 int main()
 {
-    int x,ans;
-    printf("Please type in the number you wish to get the factorial of: \n\n");
-    scanf("%d",&x);
-    ans=fact(x);
-    printf("\nThe factorial of %d is: %d.\n",x,ans);
+    int x,y,ans;
+    printf("Please put in two numbers to find the GCD: \n\n");
+    scanf("%d%d",&x,&y);
+    ans=gcd(x,y);
+    printf("\nThe GCD of %d and %d is: %d\n",x,y,ans);
 }
 
-int fact(x)
+int gcd(int x,int y)
 {
-    int i,f=1;
-    for(i=1;i<=x;i++)
-    f=f*i;
-    return f;
+    int i,min,res;
+    min=x<y?x:y;
+    for(i=1;i<=min;i++)
+    {
+        if(x%i==0 && y%i==0)
+        res=i;
+    }
+    return res;
 }
