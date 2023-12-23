@@ -19,7 +19,6 @@ int main()
     printf("\nThe comparison result is: %d!\n\n",res);
 }
 
-
 int comp(char *str1,char *str2)
 {
     while((*str1==*str2) && (*str1!=NULL || *str2!=NULL))
