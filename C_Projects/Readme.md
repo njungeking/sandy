@@ -1,1 +1,1 @@
-*A collection of my C Projects.
+* A collection of my C Projects.
