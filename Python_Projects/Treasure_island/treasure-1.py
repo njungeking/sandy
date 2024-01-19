@@ -20,7 +20,11 @@ if dir_low == "left":
       print("You've entered a room full of fire ants. GAME OVER!\n")
     elif door_lower == "yellow":
       print("Congratulations. You've WON.\n")
+    else:
+      print("You were ambushed by pirates. GAME OVER!\n")
   elif opt_lower == "swim":
     print("You have been eaten by a Crocodile. GAME OVER!\n")
-elif dir_low == "right":
+  else:
+    print("You were ambushed by pirates. GAME OVER!\n")
+else:
   print("You were ambushed by pirates. GAME OVER!\n")
