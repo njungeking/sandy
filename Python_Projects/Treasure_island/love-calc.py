@@ -17,7 +17,7 @@ e=lower_name1.count("e") + lower_name2.count("e")
 dig2=l+o+v+e
 ans=int(f"{dig1}{dig2}")
 
-if ans < 10 and ans > 90:
+if ans < 10 or ans > 90:
   print(f"Your score is {ans}, you go together like coke and mentos!\n")
 elif ans > 40 and ans < 50:
   print(f"Your score is {ans}, you are alright together!\n")
